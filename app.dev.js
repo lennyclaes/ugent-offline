@@ -1,4 +1,4 @@
-// [AIV_SHORT]  Build version: 0.1.1 - Thursday, February 27th, 2020, 4:28:42 PM  
+// [AIV_SHORT]  Build version: 0.1.2 - Thursday, February 27th, 2020, 4:38:05 PM  
  /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

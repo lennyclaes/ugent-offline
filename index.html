@@ -1,4 +1,4 @@
-<!-- [AIV_SHORT]  Build version: 0.1.1 - Thursday, February 27th, 2020, 4:28:42 PM  --> 
+<!-- [AIV_SHORT]  Build version: 0.1.2 - Thursday, February 27th, 2020, 4:38:05 PM  --> 
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,7 @@
         <!-- <a href="" class="header__add">
             <i class="material-icons">menu</i>
         </a> -->
-        <h1 class="header__title">UGENT KALENDER <span>0.1.1</span></h1>
+        <h1 class="header__title">UGENT KALENDER <span>0.1.2</span></h1>
         <a href="#add" class="header__add" id="js-add">
             <i class="material-icons">add</i>
         </a>
@@ -33,9 +33,7 @@
     <script>
       if ('serviceWorker' in navigator){
         window.addEventListener('load', () => {
-           navigator.serviceWorker.register('./sw.js', {
-               scope: 'ugent-offline'
-           })
+           navigator.serviceWorker.register('./sw.js')
         .then(() => { console.log('[ UGent Centauro Offline ] Service Worker Registered'); });
        });
      }
