@@ -18,7 +18,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/ugent-offline",
+    "start_url": "https://projects.lennyclaes.be/ugent-offline/",
     "display": "standalone",
     "background_color": "#1E64C8",
     "theme_color": "#1E64C8",
