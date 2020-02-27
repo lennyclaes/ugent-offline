@@ -1,0 +1,26 @@
+{
+    "name": "UGent Centauro Offline",
+    "short_name": "Ugent Kalender",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "logo.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/ugent-offline",
+    "display": "standalone",
+    "background_color": "#1E64C8",
+    "theme_color": "#1E64C8",
+    "orientation": "portrait"
+}

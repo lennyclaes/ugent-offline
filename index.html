@@ -1,0 +1,45 @@
+<!-- [AIV_SHORT]  Build version: 0.1.1 - Thursday, February 27th, 2020, 4:28:42 PM  --> 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ugent, centauro, ugent kalender, lesrooster">
+    <meta name="theme-color" content="#1E64C8">
+    <!-- start of Web Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <!-- end of Web Manifest -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto"
+      rel="stylesheet">
+    <title>Centauro offline</title>
+</head>
+<body>
+    <header class="header">
+        <!-- <a href="" class="header__add">
+            <i class="material-icons">menu</i>
+        </a> -->
+        <h1 class="header__title">UGENT KALENDER <span>0.1.1</span></h1>
+        <a href="#add" class="header__add" id="js-add">
+            <i class="material-icons">add</i>
+        </a>
+    </header>
+    <main class="main" id="js-output">
+
+    </main>
+
+    
+    <!-- register service worker -->
+    <script>
+      if ('serviceWorker' in navigator){
+        window.addEventListener('load', () => {
+           navigator.serviceWorker.register('./sw.js', {
+               scope: 'ugent-offline'
+           })
+        .then(() => { console.log('[ UGent Centauro Offline ] Service Worker Registered'); });
+       });
+     }
+    </script>
+    
+<script type="text/javascript" src="app.dev.js"></script></body>
+</html> 
